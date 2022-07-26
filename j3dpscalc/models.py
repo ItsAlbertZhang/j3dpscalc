@@ -21,7 +21,7 @@ class GlobalParam(models.Model):
     DecriticalDamagePower = models.FloatField()
 
     def __str__(self) -> str:
-        return f'{self.level_min}, {self.level_max}, {self.level_coefficient}, {self.level_constant}\n'
+        return f'<br>{self.level_min}, {self.level_max}, {self.level_coefficient}, {self.level_constant}</br>\n'
 
     class Meta:
         db_table = 'global_param'
